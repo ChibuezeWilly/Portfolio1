@@ -125,7 +125,7 @@ const Navbar = () => {
 				</div>
 				<div className="bg-neutral-900">
 					<button className="text-gray-300 downloadButton font-semibold  rounded-md h-12 w-40 mt-2">
-						<a href="/src/Resume.pdf" download>
+						<a href="assets/images/Resume.pdf" download>
 							Download Resume
 						</a>
 					</button>
