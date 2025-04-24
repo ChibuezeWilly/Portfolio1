@@ -10,7 +10,9 @@ import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
 	return (
-		<section className="w-full md:w-11/12 px-5 lg:px-16 py-12 text-white mx-auto mt-10" id="#contact">
+		<section
+			className="w-full md:w-11/12 px-5 lg:px-16 py-12 text-white mx-auto mt-10"
+			id="#contact">
 			<div className="about mb-8 text-start">
 				<h2 className="about  text-3xl header font-semibold">Contact Me</h2>
 			</div>
@@ -36,11 +38,14 @@ const Contact = () => {
 			{/* Social Media Links */}
 			<div className="flex flex-row justify-center items-center gap-5 mt-5">
 				<a
-					href="http://www.linkedin.com/in/chibueze-obodo-27496a2b9"
+					href="https://www.upwork.com/freelancers/~01b1a9eb5733b0869a"
 					target="_blanck"
 					className="text-white text-2xl">
-					<FaLinkedin />
-				</a>
+					<FontAwesomeIcon
+						icon={faUpwork}
+						className="text-green-600 text-2xl"
+					/>
+				</a> 
 
 				<a
 					href="https://github.com/ChibuezeWilly"

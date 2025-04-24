@@ -28,8 +28,8 @@ const Experience = () => {
 							</h1>
 							<div className="second ml-6" style={{ fontFamily: "Poppins" }}>
 								<li className="text-gray-200 ml-5 text-wrap leading-relaxed tracking-wide text-sm mt-5">
-									I worked on a <span className="header">Web3</span>{" "}
-									project where I integrated wallet functionality using{" "}
+									I worked on a <span className="header">Web3</span> project
+									where I integrated wallet functionality using{" "}
 									<span className="header">RainbowKit</span> from the{" "}
 									<span className="header">Wagmi</span> library, combined with{" "}
 									<span className="header">React</span> and{" "}
@@ -37,9 +37,10 @@ const Experience = () => {
 									responsive front-end. <br />
 								</li>
 								<li className="text-gray-200 ml-5 text-wrap leading-relaxed tracking-wide text-sm mt-5">
-									The project focused on creating seamless wallet connections
-									and customizing user authentication, including forms for
-									referral submission.
+									The project focuses on creating seamless wallet connections
+									using Wagmi, with integrated forms for referral submissions
+									and a point system based on both referrals and on-chain
+									activity.
 								</li>
 							</div>
 						</div>

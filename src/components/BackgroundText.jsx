@@ -1,10 +1,12 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUpwork } from "@fortawesome/free-brands-svg-icons";
 
 const BackgroundText = () => {
 	AOS.init();
@@ -47,10 +49,13 @@ const BackgroundText = () => {
 					</p>
 					<div className="flex flex-row gap-5 mt-5">
 						<a
-							href="http://www.linkedin.com/in/chibueze-obodo-27496a2b9"
+							href="https://www.upwork.com/freelancers/~01b1a9eb5733b0869a"
 							target="_blanck"
 							className="text-white text-2xl">
-							<FaLinkedin />
+							<FontAwesomeIcon
+								icon={faUpwork}
+								className="text-green-600 text-2xl"
+							/>
 						</a>
 
 						<a

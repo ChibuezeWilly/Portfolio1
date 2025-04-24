@@ -5,8 +5,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Firstproject = () => {
-		AOS.init();
-	
+	AOS.init();
+
 	return (
 		<>
 			<div
@@ -27,10 +27,11 @@ const Firstproject = () => {
 						Lumora
 					</h1>
 					<div className="flex flex-row space-x-5 items-center text-gray-400 ml-auto">
-						<div className="h-6 w-6 rounded-full bg-slate-900 flex justify-center items-center">
-							<a href="https://lumora-web3.onrender.com" target="_blanck">
-								<FaArrowRightFromBracket className="text-sm hover:text-white transition -rotate-45" />
+						<div className="flex flex-row space-x-5 items-center text-white ml-auto text-sm h-7 w-auto bg-yellow-700 px-3 rounded-md">
+							<a href="http://Lumecs.com" target="_blanck">
+								Live link
 							</a>
+							<FaArrowRightFromBracket className="text-sm text-gray-200 transition -rotate-45" />
 						</div>
 					</div>
 				</div>

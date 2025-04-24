@@ -5,8 +5,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const CalculatorProject = () => {
-		AOS.init();
-	
+	AOS.init();
+
 	return (
 		<div
 			className="relative w-80 h-auto p-4 mt-10 bg-gradient-to-br from-black via-neutral-900 to-yellow-700 backdrop-blur-xl rounded-md shadow-xl border border-white/20"
@@ -26,10 +26,11 @@ const CalculatorProject = () => {
 					Calculator
 				</h1>
 				<div className="flex flex-row space-x-5 items-center text-gray-400 ml-auto">
-					<div className="h-7 w-7 rounded-full bg-slate-900 flex justify-center items-center">
+					<div className="flex flex-row space-x-5 items-center text-white ml-auto text-sm h-7 w-auto bg-yellow-700 px-3 rounded-md">
 						<a href="https://calculator-flax-six.vercel.app/" target="_blanck">
-							<FaArrowRightFromBracket className="text-sm hover:text-white transition -rotate-45" />
+							Live link
 						</a>
+						<FaArrowRightFromBracket className="text-sm text-gray-200 transition -rotate-45" />
 					</div>
 				</div>
 			</div>

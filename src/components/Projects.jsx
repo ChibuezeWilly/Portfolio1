@@ -13,16 +13,10 @@ const Projects = () => {
     
 	return (
 		<div className="mt-10 w-full px-5 lg:px-14 relative" id="#projects" >
-			<h1 className="header mt-16 font-bold text-3xl">
-				Projects Currently in Development
-			</h1>
 			<div className="grid grid-cols-1 md:grid-cols-2 place-items-center">
 				<Firstproject />
 				<Jobiverse />
 			</div>
-			<h1 className="header mt-16 font-bold text-3xl">
-				Other Projects
-			</h1>
 			<div className="grid grid-cols-1 md:grid-cols-3 place-items-center">
 				<Fixer />
                 <Todo />
