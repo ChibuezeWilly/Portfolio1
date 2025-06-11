@@ -3,10 +3,11 @@ import {
 	FaEnvelope,
 	FaPhone,
 	FaMapMarkerAlt,
-	FaLinkedin,
 	FaGithub,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUpwork } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
 	return (

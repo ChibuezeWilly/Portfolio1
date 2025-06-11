@@ -13,6 +13,7 @@ const Projects = () => {
     
 	return (
 		<div className="mt-10 w-full px-5 lg:px-14 relative" id="#projects" >
+			<h1 className="text-white font-bold text-3xl">Top Projects</h1>
 			<div className="grid grid-cols-1 md:grid-cols-2 place-items-center">
 				<Firstproject />
 				<Jobiverse />
