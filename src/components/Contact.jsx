@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUpwork } from "@fortawesome/free-brands-svg-icons";
+import { faUpwork } from "@fontawesome/free-brands-svg-icons";
 
 const Contact = () => {
 	return (
