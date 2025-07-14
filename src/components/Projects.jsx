@@ -1,27 +1,26 @@
 import React from "react";
 import Firstproject from "./Firstproject";
 import Jobiverse from "./Jobiverse";
-import Fixer from './Fixer'
+import Fixer from "./Fixer";
 import Todo from "./Todo";
 import Calculator from "./CalculatorProject";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import Facebook from "./Facebook";
 
 const Projects = () => {
-        AOS.init();
-    
+	AOS.init();
+
 	return (
-		<div className="mt-10 w-full px-5 lg:px-14 relative" id="#projects" >
+		<div className="mt-10 w-full px-5 lg:px-14 relative" id="#projects">
 			<h1 className="text-white font-bold text-3xl">Top Projects</h1>
-			<div className="grid grid-cols-1 md:grid-cols-2 place-items-center">
+			<div className="grid grid-cols-1 md:grid-cols-3 place-items-center">
 				<Firstproject />
 				<Jobiverse />
-			</div>
-			<div className="grid grid-cols-1 md:grid-cols-3 place-items-center">
+				<Facebook />
 				<Fixer />
-                <Todo />
-                <Calculator />
+				<Todo />
+				<Calculator />
 			</div>
 		</div>
 	);
