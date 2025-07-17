@@ -28,7 +28,7 @@ const Firstproject = () => {
 					</h1>
 					<div className="flex flex-row space-x-5 items-center text-gray-400 ml-auto">
 						<div className="flex flex-row space-x-5 items-center text-white ml-auto text-sm h-7 w-auto bg-yellow-700 px-3 rounded-md">
-							<a href="http://Lumecs.com" target="_blanck">
+							<a href="https://development-repo.onrender.com" target="_blanck">
 								Live link
 							</a>
 							<FaArrowRightFromBracket className="text-sm text-gray-200 transition -rotate-45" />
