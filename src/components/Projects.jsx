@@ -16,9 +16,9 @@ const Projects = () => {
 			<h1 className="text-white font-bold text-3xl">Top Projects</h1>
 			<div className="grid grid-cols-1 md:grid-cols-3 place-items-center">
 				<Firstproject />
+				<Fixer />
 				<Jobiverse />
 				<Facebook />
-				<Fixer />
 				<Todo />
 				<Calculator />
 			</div>
