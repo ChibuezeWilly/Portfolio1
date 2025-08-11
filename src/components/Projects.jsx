@@ -18,7 +18,7 @@ const Projects = () => {
 				<Firstproject />
 				<Fixer />
 				<Jobiverse />
-				<Facebook />
+				{/* <Facebook /> */}
 				<Todo />
 				<Calculator />
 			</div>
