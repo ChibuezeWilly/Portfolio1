@@ -19,8 +19,8 @@ const Projects = () => {
 				<Fixer />
 				<Jobiverse />
 				{/* <Facebook /> */}
-				<Todo />
-				<Calculator />
+				{/* <Todo />
+				<Calculator /> */}
 			</div>
 		</div>
 	);
