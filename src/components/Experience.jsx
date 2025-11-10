@@ -8,7 +8,7 @@ const Experience = () => {
 	return (
 		<div
 			className="w-full h-auto pb-10 bg-white text-black mt-10"
-			id="experience">
+			id="#experience">
 			<div className="pb-10 w-full px-5 lg:px-16 pt-5 ">
 				<h1 className="header font-bold text-3xl  text-black">Experience</h1>
 				<div className="grid grid-cols-1 md:grid-cols-2 place-items-stretch gap-6">

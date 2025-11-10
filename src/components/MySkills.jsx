@@ -19,7 +19,7 @@ const MySkills = () => {
 	return (
 		<div
 			className="bg-white w-full px-5 lg:px-20 h-auto py-16"
-			id="skills">
+			id="#skills">
 			<h1 className="text-center font-bold text-2xl md:text-4xl text-black mb-2">My Skills</h1>
 			<div className="skillsImage mt-10">
 				<div className="mt-5 grid grid-cols-3 md:grid-cols-4 place-items-center gap-5">

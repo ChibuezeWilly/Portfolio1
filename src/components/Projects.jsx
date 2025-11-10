@@ -13,7 +13,7 @@ const Projects = () => {
 	AOS.init();
 
 	return (
-		<div className="mt-10 w-full px-5 lg:px-14 relative bg-white py-16" id="projects">
+		<div className="mt-10 w-full px-5 lg:px-14 relative bg-white py-16" id="#projects">
 			<h1 className="text-black font-bold text-3xl mb-2">Noteworthy Projects</h1>
 			<p className="text-gray-600 mt-1 mb-8 text-sm">
 				

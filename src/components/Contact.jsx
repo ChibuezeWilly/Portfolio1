@@ -8,7 +8,7 @@ const Contact = () => {
 	return (
 		<section
 			className="w-full md:w-11/12 px-5 lg:px-16 py-12 text-black mx-auto mt-10 bg-white"
-			id="contact">
+			id="#contact">
 			<h2 className="text-center text-3xl text-black font-semibold">
 				Contact Me
 			</h2>

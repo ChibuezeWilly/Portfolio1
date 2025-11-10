@@ -10,9 +10,9 @@ import Profile from "/assets/images/portfolio.jpg";
 const Navbar = () => {
 	AOS.init();
 
-	const [click, setClick] = useState(null);
-	const [activeSection, setActiveSection] = useState("home");
+	const [click, setClick] = useState(false);
 	const showMobileNavbar = () => setClick(true);
+	const hideMobileNavbar = () => setClick(false);
 
 	return (
 		<>

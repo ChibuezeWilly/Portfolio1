@@ -6,7 +6,7 @@ const About = () => {
 		<div
 			className="h-auto md:h-screen pt-10 md:pt-0 bg-white w-full px-5 lg:px-8"
 			style={{ fontFamily: "Roboto" }}
-			id="about">
+			id="#about">
 			<h1 className="text-center font-bold text-2xl md:text-4xl ">
 				About Me
 			</h1>
