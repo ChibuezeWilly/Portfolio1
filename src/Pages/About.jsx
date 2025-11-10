@@ -1,46 +1,58 @@
 import React from "react";
+import AboutImage from "/assets/images/about.jpg"
 
 const About = () => {
 	return (
-		<div className="w-full bg-neutral-800" id="#about">
-			<div
-				className="h-auto md:h-screen pb-10 w-full md:w-11/12 px-5 lg:px-20 pt-5"
-				style={{ fontFamily: "Roboto" }}>
-				<h1 className="header mt-16 font-bold text-2xl md:text-4xl">
-					About Me
-				</h1>
-				<div className="w-full mt-5 flex justify-center items-center mx-auto text-wrap ml-4 md:ml-14">
-					<div className=" about">
-						<div className="">
-							<p className="text-white text-lg text-center sm:text-left mt-2 leading-relaxed tracking-wide track">
-								I enjoy transforming ideas into high-quality digital products
-								and interfaces, thoughtfully designed for effectiveness and
-								usability. I’d love to be part of a cross-functional team that
-								values improving lives through user-centered design and web
-								experiences
-							</p>
+		<div
+			className="h-auto md:h-screen pt-10 md:pt-0 bg-white w-full px-5 lg:px-8"
+			style={{ fontFamily: "Roboto" }}
+			id="about">
+			<h1 className="text-center font-bold text-2xl md:text-4xl ">
+				About Me
+			</h1>
+			<div className="w-full mt-10 md:mt-5 flex flex-col md:flex-row justify-between items-start mx-auto text-wrap gap-5">
+				<div className="flex justify-center items-center w-full md:w-[40%]">
+					<img
+						src={AboutImage}
+						alt="Profile"
+						className="h-96 w-96 object-top rounded-full object-cover shadow-[0_0_50px_-20px]"
+					/>
+				</div>
 
-							<p className="text-white text-lg text-center sm:text-left mt-2 leading-relaxed tracking-wide">
-								I am a{" "}
-								<span className="header">
-									trustworthy, creative, and effective communicator.
-								</span>{" "}
-								I'm a{" "}
-								<span className="header">
-									team player , collaborator and problem solver.
-								</span>{" "}
-								I’m passionate about my work and eagerly look forward to joining
-								a challenging yet rewarding organization that fosters personal
-								growth while helping achieve its vision.
-							</p>
-							<p className="text-white text-lg text-center sm:text-left mt-2 leading-relaxed tracking-wide">
-								One of my goals for 2025 is to dive deeper into{" "}
-								<span className="header">Mobile Development</span> , as I have a
-								strong passion for it. I also aim to expand my skills in other
-								areas of tech to become a more versatile developer.
-							</p>
-						</div>
-					</div>
+				<div className="flex flex-col w-full md:w-[60%]">
+					<p className="text-black text-base text-center mt-3 leading-relaxed tracking-wide text-pretty">
+						I’m a frontend engineer with strong product instincts. I approach
+						engineering the way founders do thinking end-to-end, moving fast,
+						validating with users, and owning outcomes. I love translating
+						complex systems into interfaces that feel intuitive, human, and
+						trustworthy.
+					</p>
+
+					<p className="text-black text-base text-center mt-3 leading-relaxed tracking-wide text-pretty">
+						I take initiative, move fast, and look for ways to improve the
+						product. I treat every project like it’s my own taking full
+						responsibility for outcomes. I care deeply about building great user
+						experiences and helping teams move faster, not just contribute.
+					</p>
+
+					<p className="text-black text-base text-center mt-3 leading-relaxed tracking-wide text-pretty">
+						I’m a{" "}
+						<span className="header">
+							trustworthy, creative, and effective communicator.
+						</span>
+						I’m also a{" "}
+						<span className="header">
+							team player, collaborator, and problem solver.
+						</span>
+						I’m eager to join a forward-thinking organization that values
+						growth, ownership, and innovation.
+					</p>
+
+					<p className="text-black text-base text-center mt-3 leading-relaxed tracking-wide text-pretty">
+						When I’m not coding, I enjoy taking walks, playing football, or
+						relaxing with a good game. As a proud Manchester United fan, I never
+						miss a match when I can.
+					</p>
 				</div>
 			</div>
 		</div>

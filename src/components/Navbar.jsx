@@ -4,137 +4,105 @@ import { FaBars } from "react-icons/fa6";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import MobileNavbar from "./MobileNavbar";
-import { useState } from "react";
-import Profile from "/assets/images/thailand.jpg";
-import {
-	FaHome,
-	FaUser,
-	FaBriefcase,
-	FaPhone,
-	FaLaptopCode,
-	FaSuitcase,
-} from "react-icons/fa";
+import { useState, useEffect } from "react";
+import Profile from "/assets/images/portfolio.jpg";
 
 const Navbar = () => {
 	AOS.init();
 
 	const [click, setClick] = useState(null);
+	const [activeSection, setActiveSection] = useState("home");
 	const showMobileNavbar = () => setClick(true);
-	const hideMobileNavbar = () => setClick(false);
+
 	return (
 		<>
+			{/* Top navigation bar */}
 			<nav
-				className="sidebar h-screen left-0 z-50 bg-transparent hidden md:block"
-				style={{ zIndex: 1050 }}
-				data-aos="fade-right"
-				data-aos-delay="50"
-				data-aos-duration="1000"
-				data-aos-easing="ease-in-out"
-				data-aos-once="true"
-				data-aos-anchor-placement="top-center">
-				<div
-					className="h-full w-full flex flex-col justify-center items-center gap-7 text-center cursor-pointer bg-neutral-900 px-2"
-					style={{ fontFamily: "Poppins", zIndex: 1050 }}>
-					<div className="bg-neutral-900  w-full pb-5 -mt-14">
+				className="fixed top-0 left-0 w-full h-16 backdrop-blur-md"
+				style={{ zIndex: 1000 }}>
+				<div className="max-w-6xl mx-auto h-full px-5 flex items-center justify-between">
+					{/* Logo left */}
+					<div className="flex items-center gap-3">
 						<img
 							src={Profile}
 							alt=""
-							className="h-24 rounded-md mr-auto float-start top-0"
+							className="h-10 w-10 rounded-full object-cover"
 						/>
-					</div>
-					<div
-						className="flex items-center border-gray-800 w-full px-4 "
-						style={{ borderWidth: "1px" }}>
-						<FaHome className="text-gray-300 w-6" />
-						<Link
-							className="navbar text-gray-300 py-2 flex-1 text-center hidden md:block"
-							smooth={true}
-							to={"#home"}>
-							Home
-						</Link>
+						<p className="text-black font-semibold tracking-wide">CW.</p>
 					</div>
 
-					<div
-						className="flex items-center border-gray-800 w-full px-4"
-						style={{ borderWidth: "1px" }}>
-						<FaUser className="text-gray-300 w-6" />
-						<Link
-							className="navbar text-gray-300 py-2 flex-1 text-center hidden md:block"
-							smooth={true}
-							to={"#about"}>
-							About Me
-						</Link>
-					</div>
+					{/* Desktop links */}
+					<ul className="hidden md:flex items-center gap-8 text-sm">
+						<li className="relative pb-1">
+							<Link
+								smooth={true}
+								to="home"
+								className={`cursor-pointer transition-colors ${"text-black hover:text-green-500"}`}
+								spy={true}
+								activeClass="active">
+								Home
+							</Link>
+						</li>
+						<li className="relative pb-1">
+							<Link
+								smooth={true}
+								to="about"
+								className={`cursor-pointer transition-colors ${"text-black hover:text-green-500"}`}
+								spy={true}
+								activeClass="active">
+								About
+							</Link>
+						</li>
+						<li className="relative pb-1">
+							<Link
+								smooth={true}
+								to="skills"
+								className={`cursor-pointer transition-colors ${"text-black hover:text-green-500"}`}
+								spy={true}
+								activeClass="active">
+								Skills
+							</Link>
+						</li>
+						<li className="relative pb-1">
+							<Link
+								smooth={true}
+								to="projects"
+								className={`cursor-pointer transition-colors ${"text-black hover:text-green-500"}`}
+								spy={true}
+								activeClass="active">
+								Projects
+							</Link>
+						</li>
+						<li className="relative pb-1">
+							<Link
+								smooth={true}
+								to="experience"
+								className={`cursor-pointer transition-colors ${"text-black hover:text-green-500"}`}
+								spy={true}
+								activeClass="active">
+								Experience
+							</Link>
+						</li>
+						<li className="relative pb-1">
+							<Link
+								smooth={true}
+								to="contact"
+								className={`cursor-pointer transition-colors ${"text-black hover:text-green-500"}`}
+								spy={true}
+								activeClass="active">
+								Contact
+							</Link>
+						</li>
+					</ul>
 
-					<div
-						className="flex items-center border-gray-800 w-full px-4"
-						style={{ borderWidth: "1px" }}>
-						<FaLaptopCode className="text-gray-300 w-6" />
-						<Link
-							className="navbar text-gray-300 py-2 flex-1 text-center hidden md:block"
-							smooth={true}
-							to={"#skills"}>
-							Skills
-						</Link>
-					</div>
-
-					<div
-						className="flex items-center border-gray-800 w-full px-4"
-						style={{ borderWidth: "1px" }}>
-						<FaBriefcase className="text-gray-300 w-6" />
-						<Link
-							className="navbar text-gray-300 py-2 flex-1 text-center hidden md:block"
-							smooth={true}
-							to={"#projects"}>
-							Projects
-						</Link>
-					</div>
-					<div
-						className="flex items-center border-gray-800 w-full px-4"
-						style={{ borderWidth: "1px" }}>
-						<FaSuitcase className="text-gray-300 w-6" />
-						<Link
-							className="navbar text-gray-300 py-2 flex-1 text-center hidden md:block"
-							smooth={true}
-							to={"#experience"}>
-							Experience
-						</Link>
-					</div>
-					<div
-						className="flex items-center border-gray-800 w-full px-4"
-						style={{ borderWidth: "1px" }}>
-						<FaPhone className="text-gray-300 w-6" />
-						<Link
-							className="navbar text-gray-300 py-2 flex-1 text-center hidden md:block"
-							smooth={true}
-							to={"#contact"}>
-							Contact
-						</Link>
-					</div>
-				</div>
-			</nav>
-			<nav
-				className="bg-neutral-950 w-full flex justify-end items-center space-x-5 h-16 fixed px-5"
-				style={{ zIndex: 1000 }}>
-				<div className="bg-neutral-900 w-full block md:hidden">
-					<img
-						src={Profile}
-						alt=""
-						className="h-10 rounded-full mr-auto float-start"
+					{/* Mobile menu trigger */}
+					<FaBars
+						className="text-3xl text-black cursor-pointer md:hidden"
+						onClick={showMobileNavbar}
 					/>
 				</div>
-				<div className="bg-neutral-900">
-					<button className="text-gray-300 downloadButton font-semibold  rounded-md h-12 w-40 mt-2">
-						<a href="/assets/images/Main Resume.pdf" download>
-							Download Resume
-						</a>
-					</button>
-				</div>
-				<FaBars
-					className="text-5xl text-white cursor-pointer block md:hidden"
-					onClick={showMobileNavbar}
-				/>
 			</nav>
+
 			{click && <MobileNavbar hideMobileNavbar={hideMobileNavbar} />}
 		</>
 	);
