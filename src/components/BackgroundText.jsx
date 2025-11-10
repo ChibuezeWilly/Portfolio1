@@ -12,16 +12,16 @@ const BackgroundText = () => {
 	AOS.init();
 
 	return (
-		<div className="flex justify-center items-center overflow-hidden w-full md:w-[60%]">
+		<div className="flex justify-center items-center overflow-hidden w-full md:w-[60%] decoration">
 			<div
-				className="px-3 md:px-6 py-5 md:py-10 w-full"
+				className="px-3 md: py-5 md:py-10 w-full"
 				data-aos="fade-left"
 				data-aos-delay="10"
 				data-aos-duration="1000"
 				data-aos-easing="ease-in-out"
 				data-aos-once="true"
 				data-aos-anchor-placement="top-center">
-				<div className="intro decoration">
+				<div className=" ">
 					<h1 className="text-3xl md:text-5xl font-bold text-black">
 						<ReactTyped
 							strings={[`I'm Chibueze Williams`]}
@@ -36,7 +36,10 @@ const BackgroundText = () => {
 						Front-End Developer
 					</p>
 					<p className="text-black leading-normal text-wrap mt-1">
-						I take initiative, move fast, and constantly look for ways to make products better. <br /> I’m hungry to grow, committed to delivering real value, and take full ownership of my work. <br /> I care deeply about creating great user experiences and helping teams move faster.
+						I take initiative, move fast, and constantly look for ways to make
+						products better. <br /> I’m hungry to grow, committed to delivering
+						real value, and take full ownership of my work. <br /> I care deeply
+						about creating great user experiences and helping teams move faster.
 					</p>
 
 					{/* Action buttons */}

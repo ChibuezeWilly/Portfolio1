@@ -5,11 +5,11 @@ import HeroImage from "/assets/images/portfolio.jpg";
 const HomePage = () => {
 	return (
 		<div
-			className="bg-white flex justify-center items-center h-auto md:h-screen w-full mx-auto px-5 lg:px-8 py-14 md:py-0 overflow-hidden"
+			className="bg-white flex justify-center items-center h-auto md:h-screen w-full px-5  py-14 md:py-0"
 			id="#home">
 			<div className="flex flex-col-reverse md:flex-row items-center gap-3 justify-between ">
 				<BackgroundText />
-				<div className="flex justify-center md:justify-end rotate-12 shrink-0 w-full md:w-[40%]">
+				<div className="flex justify-center md:justify-end rotate-12 shrink-0 h-full w-full md:w-[40%] bg-green-500 rounded-full">
 					<img
 						src={HeroImage}
 						alt="Profile"

@@ -13,14 +13,13 @@ const MainLayout = () => {
 		<>
 			<div className="main-container ">
 				<Navbar />
-				<div className="content ">
 					<HomePage />
 					<About />
 					<MySkills />
 					<Projects />
 					<Experience />
 					<Contact />
-				</div>
+
 			</div>
 		</>
 	);

@@ -18,7 +18,7 @@ const Projects = () => {
 			<p className="text-gray-600 mt-1 mb-8 text-sm">
 				
 			</p>
-			<div className="grid grid-cols-1 md:grid-cols-2  gap-6 place-items-stretch">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-6 place-items-center">
 
 				<Firstproject />
 				<Chatterbox />
