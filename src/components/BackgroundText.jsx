@@ -12,7 +12,7 @@ const BackgroundText = () => {
 	AOS.init();
 
 	return (
-		<div className="flex justify-center items-center overflow-hidden">
+		<div className="flex justify-center items-center overflow-hidden w-full md:w-[60%]">
 			<div
 				className="px-3 md:px-6 py-5 md:py-10 w-full"
 				data-aos="fade-left"

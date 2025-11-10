@@ -10,7 +10,7 @@ const Firstproject = () => {
 	return (
 		<>
 			<div
-				className="relative w-full min-h-[300px] bg-white rounded-lg border border-gray-400 hover:border-green-500 transition-all hover:shadow-lg group overflow-hidden flex"
+				className="relative w-full min-h-[300px] bg-white rounded-lg border border-gray-400 hover:border-green-500 transition-all hover:shadow-lg group overflow-hidden flex flex-col-reverse md:flex-row"
 				data-aos="fade-up"
 				data-aos-delay="50"
 				data-aos-duration="1000"
@@ -18,7 +18,7 @@ const Firstproject = () => {
 				data-aos-once="true"
 				data-aos-anchor-placement="top-center">
 				{/* Left side - Content */}
-				<div className="flex-1 p-6 flex flex-col">
+				<div className="flex-1 p-6 flex flex-col ">
 					<div className="flex justify-between items-start mb-4">
 						<FaFolder className="text-green-500 text-3xl" />
 						<div className="flex gap-3">
@@ -52,7 +52,7 @@ const Firstproject = () => {
 				</div>
 
 			{/* Right side - Image */}
-			<div className="w-1/2 flex">
+			<div className="w-full md:w-1/2 flex">
 				<img
 					src={Lumora}
 					alt="Lumora Preview"

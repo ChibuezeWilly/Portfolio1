@@ -10,7 +10,7 @@ const Chatterbox = () => {
 
 	return (
 		<div
-			className="relative w-full min-h-[300px] bg-white rounded-lg border border-gray-400 hover:border-green-500 transition-all hover:shadow-lg group overflow-hidden flex"
+			className="relative w-full min-h-[300px] bg-white rounded-lg border border-gray-400 hover:border-green-500 transition-all hover:shadow-lg group overflow-hidden flex flex-col-reverse md:flex-row"
 			data-aos="fade-up"
 			data-aos-delay="100"
 			data-aos-duration="1000"
@@ -51,7 +51,7 @@ const Chatterbox = () => {
 			</div>
 
 			{/* Right side - Image */}
-			<div className="w-1/2 flex">
+			<div className="w-full md:w-1/2 flex">
 				<img
 					src={fixer}
 					alt="Fixer Preview"
