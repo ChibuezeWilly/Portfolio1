@@ -20,7 +20,17 @@ const Chatterbox = () => {
 			<div className="flex-1 p-6 flex flex-col">
 				<div className="flex justify-between items-start mb-4">
 					<FaFolder className="text-green-500 text-3xl" />
-					<p className="flex gap-3">Coming soon</p>
+					<div className="flex gap-3">
+						<a
+							href="https://frontend-repo-rho.vercel.app"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-gray-600 hover:text-green-500 transition-colors"
+							aria-label="External link">
+							<FaArrowUpRightFromSquare className="text-lg" />
+						</a>
+					</div>
+					
 				</div>
 
 				<h3 className="text-black font-bold text-xl mb-3 group-hover:text-black transition-colors">
