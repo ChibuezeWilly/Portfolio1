@@ -7,9 +7,7 @@ const About = () => {
 			className="h-auto md:h-screen pt-10 md:pt-0 bg-white w-full px-5 lg:px-8"
 			style={{ fontFamily: "Roboto" }}
 			id="#about">
-			<h1 className="text-center font-bold text-2xl md:text-4xl ">
-				About Me
-			</h1>
+			<h1 className="text-center font-bold text-2xl md:text-4xl ">About Me</h1>
 			<div className="w-full mt-10 md:mt-5 flex flex-col md:flex-row justify-between items-start mx-auto text-wrap gap-5">
 				<div className="flex justify-center items-center w-full md:w-[40%]">
 					<img
@@ -22,36 +20,29 @@ const About = () => {
 				<div className="flex flex-col w-full md:w-[60%]">
 					<p className="text-black text-base text-center mt-3 leading-relaxed tracking-wide text-pretty">
 						I’m a frontend engineer with strong product instincts. I approach
-						engineering the way founders do thinking end-to-end, moving fast,
-						validating with users, and owning outcomes. I love translating
-						complex systems into interfaces that feel intuitive, human, and
-						trustworthy.
+						engineering end-to-end, owning outcomes, moving fast, and building
+						interfaces that feel intuitive, human, and trustworthy.
 					</p>
 
 					<p className="text-black text-base text-center mt-3 leading-relaxed tracking-wide text-pretty">
-						I take initiative, move fast, and look for ways to improve the
-						product. I treat every project like it’s my own taking full
-						responsibility for outcomes. I care deeply about building great user
-						experiences and helping teams move faster, not just contribute.
+						I’ve built production-grade applications, both traditional web apps
+						and Web3 projects, using React, Next.js, Tailwind CSS, JavaScript,
+						Zustand, and React Query. I work closely with backend teams to
+						integrate RESTful APIs and focus on creating software that improves
+						user experience, solves real problems, and supports the company’s
+						mission.
 					</p>
 
 					<p className="text-black text-base text-center mt-3 leading-relaxed tracking-wide text-pretty">
-						I’m a{" "}
-						<span className="header">
-							trustworthy, creative, and effective communicator.
-						</span>
-						I’m also a{" "}
-						<span className="header">
-							team player, collaborator, and problem solver.
-						</span>
-						I’m eager to join a forward-thinking organization that values
-						growth, ownership, and innovation.
+						I take ownership, communicate clearly, and care deeply about
+						shipping quality work. I’m looking to grow in a team that values
+						collaboration, thoughtful engineering, and continuous learning, with
+						the long-term goal of becoming a technical leader.
 					</p>
 
 					<p className="text-black text-base text-center mt-3 leading-relaxed tracking-wide text-pretty">
-						When I’m not coding, I enjoy taking walks, playing football, or
-						relaxing with a good game. As a proud Manchester United fan, I never
-						miss a match when I can.
+						Outside of coding, I enjoy football, walks, and a good game, and I
+						never miss a Manchester United match.
 					</p>
 				</div>
 			</div>

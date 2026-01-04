@@ -45,14 +45,14 @@ const BackgroundText = () => {
 					{/* Action buttons */}
 					<div className="mt-6 flex gap-3">
 						<a
-							href="/assets/images/Resume.pdf"
+							href="/assets/images/MainResume.pdf"
 							download
 							className="inline-flex items-center justify-center h-11 px-5 rounded-md bg-green-500 text-white font-medium hover:bg-green-800 transition-colors">
 							Download Resume
 						</a>
 						<Link
 							smooth={true}
-							to="contact"
+							to="#contact"
 							className="inline-flex items-center justify-center h-11 px-5 rounded-md bg-black text-white font-medium hover:bg-gray-100 hover:text-black transition-colors cursor-pointer">
 							Hire Me
 						</Link>
